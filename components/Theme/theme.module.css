@@ -1,0 +1,15 @@
+/* sith-theme.module.css 🦾 */
+.root {
+  --primary-color: #ea5555;
+  --complement-color: #efefef;
+  --secondary-color: #666;
+  --secondary-complement-color: #efefef;
+}
+
+/* jedi-theme.module.css 🧑🏻‍🦯*/
+.root {
+  --primary-color: #67d1eb;
+  --complement-color: #fefefe;
+  --secondary-color: PaleGreen;
+  --secondary-complement-color: #333;
+}

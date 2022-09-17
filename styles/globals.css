@@ -4,6 +4,26 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --main-color: forestgreen;
+  --f-sans: -apple-system, 'BlinkMacSystemFont', 'avenir next', 'avenir',
+    'helvetica neue', 'helvetica', 'Ubuntu', 'roboto', 'noto', 'segoe ui', arial,
+    sans-serif;
+
+  /* Font sizes */
+  --fs-s: 12px;
+  --fs-m: 14px;
+
+  /* Line heights */
+  --lh-s: 18px;
+  --lh-m: 21px;
+
+  /* Fonts */
+  --font-s: var(--fs-s) / var(--lh-s) var(--f-sans);
+  --font-m: var(--fs-m) / var(--lh-m) var(--f-sans);
+
+  /* Spacing */
+  --spacing-s: 4px;
+  --spacing-m: 8px;
 }
 
 a {

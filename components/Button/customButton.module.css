@@ -1,0 +1,35 @@
+.button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  padding: 0;
+  font: var(--btn-font);
+  color: var(--btn-fg-color);
+  background: var(--btn-bg-color);
+  padding: var(--btn-label-padding);
+}
+
+.button:hover {
+  opacity: 50%;
+}
+
+.button__s {
+  --btn-font: var(--font-s);
+  --btn-label-padding: var(--spacing-s) var(--spacing-m);
+}
+.button__m {
+  --btn-font: var(--font-m);
+  --btn-label-padding: var(--spacing-m) var(--spacing-l);
+}
+.button__primary {
+  --btn-fg-color: var(--complement-color);
+  color: blue;
+}
+.button__secondary {
+  --btn-fg-color: var(--secondary-complement-color);
+  color: green;
+}
