@@ -5,36 +5,27 @@
   user-select: none;
   -webkit-user-select: none;
   padding: 10px 30px;
-  background: transparent;
-
-  /* TODO: Implement design system */
-  /* font: var(--btn-font);
-  color: var(--btn-fg-color);
-  background: var(--btn-bg-color);
-  padding: var(--btn-label-padding); */
 }
 
 .button:hover {
   opacity: 50%;
 }
 
-.button__s {
-  --btn-font: var(--font-s);
-  font-size: 14px;
-  --btn-label-padding: var(--spacing-s) var(--spacing-m);
+.button__success {
+  background: rgb(13, 189, 13);
+  color: white;
 }
-.button__m {
-  --btn-font: var(--font-m);
-  font-size: 18px;
-  border: 0.2px solid red;
-  --btn-label-padding: var(--spacing-m) var(--spacing-l);
+.button__danger {
+  background: #b00020;
+  color: white;
 }
 .button__primary {
-  --btn-fg-color: var(--complement-color);
-  color: blue;
-  background: navajowhite;
+  color: white;
+  background: #6200ee;
+  font-size: 16px;
 }
 .button__secondary {
-  --btn-fg-color: var(--secondary-complement-color);
-  color: green;
+  color: black;
+  background: #018786;
+  font-size: 18px;
 }

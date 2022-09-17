@@ -7,8 +7,8 @@ const CustomButton = ({ variant, type, className, children }) => {
   const buttonClass = cn(style.button, style.root, {
     [style.button__primary]: type === 'primary',
     [style.button__secondary]: type === 'secondary',
-    [style.button__s]: variant === 'primary',
-    [style.button__m]: variant === 'danger',
+    [style.button__success]: variant === 'success',
+    [style.button__danger]: variant === 'danger',
   });
   return <button className={buttonClass}>{children}</button>;
 };
