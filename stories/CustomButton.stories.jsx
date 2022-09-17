@@ -1,4 +1,5 @@
 import CustomButton from './../components/Button/CustomButton';
+import { actions, action } from '@storybook/addon-actions';
 
 export default {
   title: 'Example/CustomButton',

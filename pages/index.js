@@ -5,6 +5,7 @@ import CustomButton from './../components/Button/CustomButton';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const logStuff = () => alert('Clicked');
   return (
     <div className={styles.container}>
       <Head>
@@ -43,7 +44,7 @@ export default function Home() {
         </div>
         <div>
           Design system for buttons with classNames package
-          <CustomButton className='kkk' type='primary' variant='danger'>
+          <CustomButton handleClick={logStuff} variant='danger'>
             Lorem
           </CustomButton>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './customButton.module.css';
 import cn from 'classnames';
-const CustomButton = ({ variant, type, className, children }) => {
+const CustomButton = ({ variant, type, className, children, handleClick }) => {
   // const combinedClassName = [style.button, className].filter(Boolean).join(' ');
 
   const buttonClass = cn(style.button, style.root, {
@@ -10,7 +10,11 @@ const CustomButton = ({ variant, type, className, children }) => {
     [style.button__success]: variant === 'success',
     [style.button__danger]: variant === 'danger',
   });
-  return <button className={buttonClass}>{children}</button>;
+  return (
+    <button onClick={handleClick} className={buttonClass}>
+      {children}
+    </button>
+  );
 };
 
 export default CustomButton;
