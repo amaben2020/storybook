@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div>
           Design system for buttons with classNames package
-          <CustomButton className='' type='primary' variant='danger'>
+          <CustomButton className='kkk' type='primary' variant='danger'>
             Lorem
           </CustomButton>
         </div>

@@ -2,7 +2,9 @@ import React from 'react';
 import style from './customButton.module.css';
 import cn from 'classnames';
 const CustomButton = ({ variant, type, className, children }) => {
-  const buttonClass = cn(className, style.root, {
+  // const combinedClassName = [style.button, className].filter(Boolean).join(' ');
+
+  const buttonClass = cn(style.button, style.root, {
     [style.button__primary]: type === 'primary',
     [style.button__secondary]: type === 'secondary',
     [style.button__s]: variant === 'primary',
