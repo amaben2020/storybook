@@ -19,10 +19,12 @@
 
 .button__s {
   --btn-font: var(--font-s);
+  font-size: 14px;
   --btn-label-padding: var(--spacing-s) var(--spacing-m);
 }
 .button__m {
   --btn-font: var(--font-m);
+  font-size: 18px;
   --btn-label-padding: var(--spacing-m) var(--spacing-l);
 }
 .button__primary {

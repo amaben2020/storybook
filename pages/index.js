@@ -42,8 +42,10 @@ export default function Home() {
           </Banner>
         </div>
         <div>
-          {' '}
-          <CustomButton variant='primary'>Lorem</CustomButton>
+          Design system for buttons with classNames package
+          <CustomButton className='' type='primary' variant='danger'>
+            Lorem
+          </CustomButton>
         </div>
       </main>
     </div>
