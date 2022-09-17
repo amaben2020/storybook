@@ -11,16 +11,20 @@ export default {
   },
 };
 
-// addons
+// addons and knobs
 const Template = (args) => (
-  <CustomButton {...args}>
-    This is a {args.variant} variant of the button
-  </CustomButton>
+  <CustomButton {...args}>{args.children || ' Button'}</CustomButton>
 );
 export const Success = Template.bind({});
 export const Danger = Template.bind({});
 export const Primary = Template.bind({});
 export const Secondary = Template.bind({});
+
+export const Log = () => (
+  <CustomButton type='primary' {...actions('onClick', 'onMouseHover')}>
+    This is a variant of the button
+  </CustomButton>
+);
 
 Success.args = {
   className: '',
