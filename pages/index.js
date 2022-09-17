@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Banner from '../stories/Banner';
 import CustomButton from './../components/Button/CustomButton';
 import styles from '../styles/Home.module.css';
+import Card from '../components/Todos/Card';
+import Input from '../components/Todos/Input';
 
 export default function Home() {
   const logStuff = () => alert('Clicked');
@@ -42,11 +44,19 @@ export default function Home() {
             </p>
           </Banner>
         </div>
-        <div>
+        <div style={{ display: 'flex' }}>
           Design system for buttons with classNames package
           <CustomButton handleClick={logStuff} variant='danger'>
             Lorem
           </CustomButton>
+        </div>
+
+        <div>
+          <Card />
+        </div>
+
+        <div>
+          <Input />
         </div>
       </main>
     </div>
