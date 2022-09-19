@@ -5,6 +5,7 @@ import CustomButton from './../components/Button/CustomButton';
 import styles from '../styles/Home.module.css';
 import Card from '../components/Todos/Card';
 import Input from '../components/Todos/Input';
+import CustomAccordion from '../components/Accordion';
 
 export default function Home() {
   const logStuff = () => alert('Clicked');
@@ -57,6 +58,10 @@ export default function Home() {
 
         <div>
           <Input />
+        </div>
+
+        <div>
+          <CustomAccordion />
         </div>
       </main>
     </div>
