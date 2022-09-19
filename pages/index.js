@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 import Card from '../components/Todos/Card';
 import Input from '../components/Todos/Input';
 import CustomAccordion from '../components/Accordion';
-
+import { data } from './../components/Accordion/data';
 export default function Home() {
   const logStuff = () => alert('Clicked');
   return (
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         <div>
-          <CustomAccordion />
+          <CustomAccordion data={data} flush={true} />
         </div>
       </main>
     </div>
