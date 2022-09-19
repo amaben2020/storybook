@@ -4,7 +4,7 @@ import React from 'react';
 const CustomAccordion = () => {
   // flush, arrowIcon
   return (
-    <Accordion>
+    <Accordion flush={true}>
       <Accordion.Panel>
         <Accordion.Title>What is Flowbite?</Accordion.Title>
         <Accordion.Content>
@@ -26,7 +26,7 @@ const CustomAccordion = () => {
           </p>
         </Accordion.Content>
       </Accordion.Panel>
-      <Accordion.Panel>
+      {/* <Accordion.Panel>
         <Accordion.Title>Is there a Figma file available?</Accordion.Title>
         <Accordion.Content>
           <p className='mb-2 text-gray-500 dark:text-gray-400'>
@@ -46,7 +46,7 @@ const CustomAccordion = () => {
             Flowbite.
           </p>
         </Accordion.Content>
-      </Accordion.Panel>
+      </Accordion.Panel> */}
       <Accordion.Panel>
         <Accordion.Title>
           What are the differences between Flowbite and Tailwind UI?
